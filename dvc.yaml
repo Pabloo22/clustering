@@ -1,0 +1,8 @@
+stages:
+  powertransform:
+    cmd: python src/powertransform.py data/data.csv
+    deps:
+    - data/data.csv
+    - src/powertransform.py
+    outs:
+    - data/data_powertransform.csv

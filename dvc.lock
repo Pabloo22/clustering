@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  powertransform:
+    cmd: python src/powertransform.py data/data.csv
+    deps:
+    - path: data/data.csv
+      md5: b36d40ee963b3de7ba78e86d01b4004a
+      size: 43689903
+    - path: src/powertransform.py
+      md5: 0a6917db2377a4189be6f82acdbfc209
+      size: 478
+    outs:
+    - path: data/data_powertransform.csv
+      md5: ae620fb8b5f143d3365167b2baaa64bf
+      size: 43599605
